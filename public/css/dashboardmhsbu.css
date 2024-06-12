@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --purple: rgb(74, 37, 116);
+  --violet: #D9ACFF;
+  --dark-purple: #0F0529;
+  --light-purple: #9E72C3;
+}
+
+* {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bi {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
+.container-fluid {
+  background-color: #F5E6FF;
+}
+
+.bg-body-tertiary {
+  background-color: #100429 !important;
+}
+
+.container-fluid .row .sidebar .offcanvas-md a {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+/* .container-fluid .row .sidebar .offcanvas-md {
+  background-color: var(--light-purple);
+  color: #ffffff !important;
+} */
+
+/*
+ * Sidebar
+ */
+
+@media (min-width: 768px) {
+  .sidebar .offcanvas-lg {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px;
+  }
+
+  .navbar-search {
+    display: block;
+  }
+}
+
+.sidebar .nav-link {
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+.sidebar .nav-link.active {
+  color: #2470dc;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+}

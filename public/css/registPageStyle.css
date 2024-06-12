@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --purple: #4A2574;
+    --violet: #D9ACFF;
+    --dark-purple: #0F0529;
+    --light-purple: #9E72C3;
+}
+
+* {
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-purple);
+}
+
+.container h2 {
+    letter-spacing: .5px;
+    font-weight: 800;
+}
+
+.container .col-md-6 .row .input-group .btn {
+    background-color: var(--dark-purple);
+    color: #fff;
+}
+
+.container .col-md-6 .row .login a {
+    text-decoration: none;
+    color: var(--dark-purple);
+}
+
+
+/*------------ Login container ------------*/
+.box-area {
+    height: 800px;
+    width: 1000px;
+}
+
+/*------------ Right box ------------*/
+.right-box {
+    padding: 40px 30px 40px 40px;
+}
+
+/*------------ Custom Placeholder ------------*/
+::placeholder {
+    font-size: 16px;
+}
+
+.rounded-4 {
+    border-radius: 20px;
+}
+
+.rounded-5 {
+    border-radius: 30px;
+}
+
+/*------------ For small screens------------*/
+@media only screen and (max-width: 768px) {
+    .box-area {
+        margin: 0 10px;
+    }
+
+    .left-box {
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .right-box {
+        padding: 20px;
+    }
+}
+
+
+/* Bootstrap Form
+.form-signin {
+    max-width: 330px;
+    padding: 1rem;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+} */
+
+/* .container .row .form-floating input::placeholder {
+    margin-left: 3rem;
+} */
+
+.container .row .form-floating label {
+    color: var(--dark-purple);
+    margin-left: .1px;
+}
+
+/* Registation Form */
+
+
+.container .row .col-md-6 .form-floating {
+    display: block;
+    margin-bottom: 100rem;
+    align-items: center;
+
+}
+
+
+.container .row .col-md-6 .form-floating img {
+
+    width: 18px;
+    cursor: pointer;
+    position: absolute;
+    left: 380px;
+    bottom: 20px;
+}

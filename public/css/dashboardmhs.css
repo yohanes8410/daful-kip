@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --purple: #4A2574;
+    --violet: #D9ACFF;
+    --dark-purple: #0F0529;
+    --light-purple: #9E72C3;
+    --soft-pink: #F5E6FF;
+}
+
+* {
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--soft-pink);
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    display: flex;
+    background-color: var(--dark-purple);
+    width: 260px;
+    padding: 24px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+
+
+.sidebar .header .list-item img {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #D9D9D9;
+
+}
+
+.sidebar .header .list-item a {
+    position: relative;
+    text-decoration: underline solid #fff;
+    color: #fff;
+    left: 79px;
+}
+
+.sidebar .main .list-item {
+    margin-bottom: 8px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 10px;
+    border-radius: 8px;
+    width: 212px;
+    box-sizing: border-box;
+    transition: all ease-in .2s;
+}
+
+.sidebar .main .list-item:hover {
+    cursor: pointer;
+    background-color: #4A2574;
+
+}
+
+
+.sidebar .main .list-item a {
+    width: 50vh;
+
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.sidebar .main .list-item .icon {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(101deg) brightness(105%) contrast(106%);
+    margin-right: 5px;
+    margin-bottom: 1px;
+    width: 20px;
+}
+
+
+
+.sidebar .main .list-item .description {
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.sidebar .main .list-item .logout-button .description-logout {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+}
+
+.logout-button {
+    /* Reset styles */
+
+    padding: 0;
+    background-color: transparent;
+    text-align: left;
+    width: 30vh;
+    border: none;
+    margin: 0;
+}
+
+.logout-button .logout-img {
+    width: 20px;
+    margin-right: 2px;
+    margin-left: 3px;
+    margin-bottom: 6px;
+}
+
+/* MAIN CONTENT (CONTAINER) */
+
+.main-content {
+    height: 100vh;
+    min-width: 8vw;
+    background-color: var(--violet);
+
+}

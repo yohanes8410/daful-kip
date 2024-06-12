@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* CSS for Reset Password Page */
+:root {
+    --purple: #4A2574;
+    --violet: #D9ACFF;
+    --dark-purple: #0F0529;
+    --light-purple: #9E72C3;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #fff;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+#app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 30rem;
+    height: 15rem;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    background-color: var(--dark-purple);
+    color: #ffffff;
+    font-size: 1.25rem;
+    height: 3rem;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    /* Add Flexbox */
+    align-items: center;
+    /* Center items vertically */
+    justify-content: center;
+    /* Center items horizontally */
+}
+
+.card-body {
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    /* Add Flexbox */
+    align-items: center;
+    /* Center items vertically */
+    justify-content: center;
+    /* Center items horizontally */
+    flex-direction: column;
+    /* Add this line */
+}
+
+.invalid-feedback {
+    font-size: .8rem;
+    font-weight: 700;
+    color: #ed4337;
+    margin: .1rem 0;
+    text-align: center;
+    /* Add this line */
+    width: 100%;
+    /* Add this line */
+}
+
+.alert {
+    font-size: .8rem;
+    font-weight: 700;
+    color: #28a745;
+    margin: .1rem 0;
+    text-align: center;
+    /* Add this line */
+    width: 100%;
+    /* Add this line */
+}
+
+
+.form-control {
+    margin-top: .5rem;
+    border-radius: 4px;
+    border: 1px solid #cbd5e0;
+    width: 18rem;
+    padding: .5rem;
+}
+
+input {
+    text-align: center;
+    font-family: 'Outfit', 'sans-serif';
+}
+
+.btn-primary {
+    font-family: 'Outfit', 'sans-serif';
+    margin: .5rem;
+    width: 19.1rem;
+    background-color: var(--dark-purple);
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.2rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* .btn-primary:hover {
+    color: var(--dark-purple);
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid var(--dark-purple);
+} */
+
+.btn-primary:hover {
+    background-color: #2d3748;
+    border-color: #2d3748;
+}
+
+.text-md-end {
+    text-align: end;
+}
+
+.card-reset {
+    width: 30rem;
+    height: 23rem;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin: 1rem;
+    }
+
+    .form-control {
+        padding: 0.5rem;
+    }
+
+    .btn-primary {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+}
